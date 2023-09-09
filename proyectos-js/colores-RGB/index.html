@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Color RGB</title>
+  </head>
+  <body>  
+    <div class="contenedor-principal">
+      <div class="contenedor-interno">
+
+        <div class="color">
+          <label for="rojo">Rojo (R)</label>
+          <input id="rojo" type="range" min="0" max="255" value="23" step="1">
+          <P id="texto-rojo"></P>
+        </div> 
+
+        <div class="color">
+          <label for="verde">Verde (V)</label>
+          <input id="verde" type="range" min="0" max="255" value="67" step="1">
+          <P id="texto-verde"></P>
+        </div>
+
+        <div class="color">
+          <label for="azul">Azul (B)</label>
+          <input id="azul" type="range" min="0" max="255" value="100" step="1">
+          <P id="texto-azul"></P>
+        </div> 
+         
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

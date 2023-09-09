@@ -1,0 +1,108 @@
+/*selector universal-------------------------------*/
+* {
+  background-color: #0f0f0f;
+  color: #f1f1f1;
+  font-family: 'Courgette', cursive;;
+ }
+
+
+/*selectores diresctos----------------------------*/
+h1{
+  font-size: 60px;
+ }
+
+h2 {
+  font-size: 30px;
+ }
+
+li {
+  font-size: 25px;
+ }
+
+ a {
+  text-decoration: none;
+ }
+
+ 
+/*selector de (id)-----------------------------------*/
+#titulo-app-gatos {
+  color: rgb(255, 255, 255);
+  font-family: 'Courgette', cursive;
+}
+
+#gato {
+  border: 15px;
+  border-style: solid;
+  border-color: rgb(153, 132, 150);
+}
+
+/*selector (class)---------------------------*/
+.mas-gatos {
+  font-size: 20px;
+  background-color: darkred;
+}
+
+/*padding,border,margin-------------------*/
+.gato1 {
+  /*el padding es la distancia entre la imagen y el borde*/
+  /*de esta forma podemos accinarle el padding en una sola linea en el sentido del reloj (arriba,derecha,abajo,izquierda*/
+  padding: 5px 20px 40px 10px;
+  /*asi le damos tamaño al padding de forma directa a cada lado*/
+  padding-top: 20px;/*arriba*/
+  padding-right: 20px;/*derecho*/
+  padding-bottom: 20px;/*abajo*/
+  padding-left: 20px;/*izquierdo*/
+  
+  
+/*-----------------------------------------------*/
+/*el border es la distancia entre el padding y el margin*/
+  border-color: rgb(247, 6, 155);
+  border: 20;
+  border-style:solid;
+  border-width: 50px;
+
+  /*----------------------------------------------*/
+  /*el margin es la distancia entre cada contenido*/
+  margin: 15px;
+}
+
+/*----------------------------------------------------*/
+/*selectores de atributos----se colocan entre corchetes tipo array con el atributo de un elemento */
+
+[type="radio"] {
+  margin: 5px;
+}
+
+[type="checkbox"] {
+  margin: 7px;
+}
+
+/*unidades relativas y absolutas*/------------------------------
+
+#contenedor-principal {
+  color: white;
+  padding: 5px;
+  font-size: 10px;
+  background-color: rgb(255, 255, 255) !important;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.rectangulo {
+  padding: 5px;
+  margin: 5px;
+}
+
+.px {
+  background-color: crimson;
+  width: 200px;
+}
+
+.vw {
+  background-color: darkmagenta;
+  width: 20vw;
+}
+
+.em {
+  background-color: green;
+  width: 15em;
+}

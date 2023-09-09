@@ -1,0 +1,21 @@
+GITHUB
+.1definicion:
+  GitHub= Es un servicio de alojamiento o (hosting) que nos permite almacenar proyectos, poder modificarlo y crear varias versiones de el.
+
+.permisos:
+  COPIAR = url en la opcion ( <>code ) en pagina primcipal  de GITHUB.
+
+.clonar repocitorio:
+  *GIT CLONE + URL = crea copia de los archivos de
+
+.verificar repocitorio:
+  GIT REMOTE = permite verificar el nombre que se le asigno al repocitorio.
+  GIT REMOTE -V = murstra las obcones para interactuar con el repocitorio.
+
+.buscar cambios:
+  GIT FETCH = permite buscar o obtener los cambios que se hallan realizado en el repocitorio.
+
+.enviar cambios:
+  GIT PUSH = permite enviar los cambios realizados en nuestro repocitorio local.
+
+

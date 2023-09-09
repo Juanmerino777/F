@@ -1,0 +1,116 @@
+GIT
+
+. DEFINICON:
+
+  GIT= Es un sistema de control de versiones que nos permite rastrear los cambios que hemos hecho en un archivo.
+  
+
+. COMANDOS DE CONFIGURACION:
+
+  git config --global user.name "NOMBRE DE USUARIO" = Crea usuario.
+  git config --global user.name = verificamos usuario.
+  git config --global usar.email "CORREO DE USUARIO" = Registra usuario.
+  git config --global core.editor "code --wait" = nos permite seleccionar a vs code como editor de texto.
+
+
+.CODIGOS CREAR CARPETAS Y MOVERSE DENTRO DE LAS MISMAS:
+
+  MKDIR= Crea un carpeta nueva.
+  RMDIR= Elimina una carpeta.
+  CD=    Ingresar a esa carpeta , (Regresar a raiz).
+  LS=    Ver dentro de una carpeta.
+  CD..=  Regresar a carpeta anterior.
+  clear= Linpia pantalla de git.
+
+. AREAS DE GIT:
+
+         #1                  #2               #3
+      (Carpeta)  => (Area de preparacion) => (Comit)
+      Modificada =>       preparada       => Confirmada
+      modified   =>        staged         => committed
+
+  *MODIFICADA= Cuando creas el archivo y le agregamos contenido .
+
+  *PREPARADA= Cuando la enlazamos al hosting con el comando ( add . ) pero no a sido comfirmada como comprometida (commit).
+
+  *CONFIRMADA= Cuando subimos los cambios con comando ( git commit ) creando una version para los cambios.
+
+
+. INICIALIZANDO UN REPOCITORIO:
+
+  GIT INIT= Inicializa un repocitorio llamado (master), creando una cartpeta (.git) dentro de nuestro proyecto.
+    git config --global init.defaulbranch = cambiamos el nombre de master.
+
+    DESCRIPCION:
+      GIT INIT= Forma de enlazar una carpeta con (GitHub) e iniciar repocitorio o alojamiento.
+      ELLIMINAR REPOCITORIO LOCAL = vasta con eliminar la carpeta ( .git) del almacenamiento.
+
+  GIT STATUS= verifica en que rama estamos y el estado de nuestros commit, en caso de ignorar los cambios usamos el comando (git restore) para descartar los cambios.
+
+  GIT ADD= agrega cambios al area de preparada. 
+    NOTA: si queremos agregar todos los cambios no confirmados usamos el comando ( git add . )
+  
+  GIT RM --CACHED= remueve cambios del area de prerparacion.
+
+
+. AGREGAR UN COMMIT:
+
+  COMMIT= Forma de registrar los cambios que realizamos al documento de esa forma podemos acceder al antes y despues del documento.
+    NOTA: al crear el commit generamos un identificador unico que nos muestra nombre de autor y correo, fecha y descripcion del commit.
+
+. FORMAS DE REALIZAR COMMIT:
+
+    1. git commit -m "la descripcion de lo realizado" = asi realizamos el commit directamente en git.
+
+    2. git commit y ENTER = de esta forma realzamos el commit con la ayuda de visual Estudio (vs code).
+
+    3. directamente con visual Estudio (vs code).
+
+
+. EDITAR UN COMMIT:
+
+    git commit --amend = nos permite editar el ultimo commit agregado.
+
+
+  ELIMINAR UN COMMIT:
+
+    git reset --solft HEAD~1 = elimina commit manteniendo los cambios.
+    git reset --hard HEAD~1 = elimina commit pero sin mantener los cambios.
+                          
+      NOTA: el numero identifica el retroceso para celeccionar el commit a eliminar.
+
+
+  COMANDOS:
+
+    GIT LOG = Muestra historial de commit o cambios que hemos realizado.
+    GIT LOG --ONELINE = Muestra los commit resumidos en una sola linea. 
+    GIT LOG -P = Muestra los commit con los cambios que hemos realizado en las diferentes ramas.
+
+
+. RAMAS EN GIT:
+
+  DEFINICION:
+    RAMA O (branch) = es una linea independiente o copia que creamos para no afectar directamente el proyecto.
+
+  CREAR UNA RAMA:
+
+    1. GIT BRANCH = crea una rama y verifica si hay ramas existentes.
+
+    2. GIT CHECKOUT -B = crea una rama y te ubica dentro de la misma.
+      nota = GIT CHECKOUT+NOMBRE = tambien sirve para salir o entrar a una rama.
+
+  CAMBIAR NOMBRE DE RAMA:
+
+    1. GIT BRANCH -M = modifica el nombre de la rama.
+        NOTA= de esta manera tenemos que estar dentro de la carpeta a modificar.
+
+    2. git branch -m + nombreCarpetaActual Y nombreCarpetauNeva = modificamos el nombre sin la nesecidad de estar dentro de la misma
+  
+  eliminar rama:
+            
+    GIT BRANCH -D + NOMBRE DE RAMA = elimina la rama seleccionada.
+
+  fusionar ramas (Merge):
+
+    git merge + nombreDeRama = nos permite combinar una rama con la rama primcipal.
+      nota = para la combinacion debemos estar en la rama raiz.
